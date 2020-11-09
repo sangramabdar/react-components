@@ -1,0 +1,27 @@
+.parent {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 200px;
+    //perspective: 20000px;
+    transition: transform 2s;
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+
+svg {
+    background-color: red;
+}
+
+path {
+    background-color: black;
+    color: yellow;
+    transition: 0.2s;
+}
+
+svg:hover,
+path:hover {
+    background-color: blue;
+    d: path("M8,2 L2,8");
+}
